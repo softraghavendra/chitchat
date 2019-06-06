@@ -13,7 +13,10 @@ public class MyApp {
 
 	}
 	
-	//To enable Hibernate SessionFactory
+	//To enable Hibernate SessionFactory in SpringBoot
+	//all the things which we want to use in springBoot
+	// is injected as a bean 
+	// and this is ready to use
 	@Bean
 	public HibernateJpaSessionFactoryBean sessionFactory() {
 	    return new HibernateJpaSessionFactoryBean();
